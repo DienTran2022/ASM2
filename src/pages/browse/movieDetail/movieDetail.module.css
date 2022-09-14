@@ -1,0 +1,11 @@
+.title {
+  color: white;
+}
+.info p {
+  color: white;
+  width: 500px;
+}
+.movieDetail {
+  position: absolute;
+  z-index: 2;
+}

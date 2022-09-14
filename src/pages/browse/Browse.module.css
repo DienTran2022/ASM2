@@ -1,0 +1,9 @@
+.list {
+  background-color: black;
+  padding-top: 50px;
+  margin-top: -5px;
+}
+.list h2 {
+  color: white;
+  margin-left: 20px;
+}

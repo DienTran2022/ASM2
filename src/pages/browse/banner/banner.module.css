@@ -1,0 +1,30 @@
+.background {
+  z-index: 1;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+}
+.name {
+  color: white;
+  font-size: 40px;
+}
+.info {
+  position: absolute;
+  bottom: 20%;
+  left: 30px;
+  width: 40%;
+}
+.overview {
+  color: white;
+  font-weight: bold;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}

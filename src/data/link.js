@@ -30,6 +30,14 @@ export const url = {
   Romance: `${imageBasePath}${requests.fetchRomanceMovies}`,
 
   Document: `${imageBasePath}${requests.fetchDocumentaries}`,
+
+  nameTrending: `Xu hướng`,
+  nameTopRate: `Xếp hạng cao `,
+  nameAction: `Hành động`,
+  nameComedy: `Hài`,
+  nameHorror: `Kinh dị`,
+  nameRomance: `Lãng mạn`,
+  nameDocument: `Tài liệu`,
 };
 
-export const imageSizePath = `http://image.tmdb.org/t/p/`;
+export const imageSizePath = `http://image.tmdb.org/t/p/original`;

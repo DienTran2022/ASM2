@@ -8,4 +8,10 @@
 .movieDetail {
   position: absolute;
   z-index: 2;
+  background-color: black;
+  margin-top: 200px;
+  margin-left: -20px;
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
 }

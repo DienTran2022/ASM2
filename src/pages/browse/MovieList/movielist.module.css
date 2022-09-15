@@ -1,16 +1,37 @@
+.title {
+  color: white;
+  margin-left: 10px;
+}
 .list {
   display: flex;
   flex-direction: row;
   margin-left: 30px;
   margin-bottom: 45px;
   overflow-x: auto;
+  overflow-y: hidden;
+  gap: 5px;
   white-space: nowrap;
+  scrollbar-color: dark;
 }
-.list img {
+.list-img {
   margin: 0px 5px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  width: 150px;
+  height: 200px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.list-img-large {
+  margin: 0px 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  height: 150px;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -28,10 +49,6 @@
   border-radius: 5px;
 }
 .list-poster img:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-.list-backdrop img:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }

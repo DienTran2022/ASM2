@@ -12,8 +12,10 @@ const MovieDetail = (props) => {
         <hr></hr>
         <p>{`Release Date: ${props.data.release_date}`}</p>
         <p>{`Vote: ${props.data.vote_average}/10`}</p>
-        <br></br>
         <p>{`${props.data.overview}`}</p>
+      </div>
+      <div>
+        <h1> Video Youtube</h1>
       </div>
     </div>
   );

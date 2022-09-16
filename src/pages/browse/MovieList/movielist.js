@@ -8,6 +8,7 @@ const MovieList = ({ fetchUrl, title, isLarge }) => {
   const { movies, fetchMovies } = useFetch(fetchUrl);
   const [show, setShow] = useState(false);
   const [info, setInfo] = useState("");
+  const [infoClick, setInfoClick] = useState("");
   useEffect(() => {
     async function fecthData() {
       await fetchMovies();
@@ -16,10 +17,15 @@ const MovieList = ({ fetchUrl, title, isLarge }) => {
   }, [fetchMovies]);
 
   const handleInfoMovie = (movie) => {
-    setShow(() => setShow(!show));
     setInfo(movie);
+    if (infoClick === movie.name || infoClick === movie.original_title) {
+      setShow(() => setShow(!show));
+      setInfoClick("");
+    } else {
+      setInfoClick(movie.name);
+    }
   };
-  
+  console.log(infoClick);
   return (
     <div>
       <h1 className={moviesStyle["title"]}>{title}</h1>
@@ -43,8 +49,8 @@ const MovieList = ({ fetchUrl, title, isLarge }) => {
             </div>
           );
         })}
-        {show && <MovieDetail data={info} />}
       </div>
+      {show && <MovieDetail data={info} />}
     </div>
   );
 };

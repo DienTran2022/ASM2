@@ -1,6 +1,6 @@
 export const imageBasePath = `https://api.themoviedb.org/3`;
 
-const API_KEY = `66360006c856854e580e34d0ef9d0f1e`;
+export const API_KEY = `66360006c856854e580e34d0ef9d0f1e`;
 
 export const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,

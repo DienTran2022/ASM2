@@ -7,7 +7,6 @@ import { url } from "../../../data/link";
 
 const Banner = () => {
   const { movies, fetchMovies } = useFetch(url.Banner);
-
   const dataRandom =
     movies.length !== 0 &&
     movies[Math.floor(Math.random() * (movies.length - 1))];

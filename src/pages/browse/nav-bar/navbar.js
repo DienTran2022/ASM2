@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import navbarStyles from "./navbar.module.css";
 
 const NavBar = () => {
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+
+  const navBarChange = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", navBarChange);
+
+    return () => {
+      window.removeEventListener("scroll", navBarChange);
+    };
+  }, []);
 
   return (
-    <div className={navbarStyles["navbar"]}>
+    <div
+      className={show ? navbarStyles["navbarchange"] : navbarStyles["navbar"]}
+    >
       <button onClick={() => navigate("/")} className={navbarStyles["search"]}>
         Movie app
       </button>

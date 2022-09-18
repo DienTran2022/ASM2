@@ -24,11 +24,11 @@ const InfoYoutube = (props) => {
     }
     fecthData();
   }, [fetchMovies]);
+
   let videoinfo = movies.find((item) => {
     return item.type === "Trailer";
   });
   //   console.log("data for MovieYoutube:", videoinfo);
-
   let content = "";
   if (!props.data.hasOwnProperty("video") || typeof videoinfo === "undefined") {
     content = (
@@ -40,7 +40,7 @@ const InfoYoutube = (props) => {
   } else if (typeof videoinfo !== "undefined") {
     content = (
       <YouTube
-        videoId={videoinfo.id}
+        videoId={videoinfo.key}
         opts={opts}
         className={InfoYoutubeStyle["youtube"]}
       />

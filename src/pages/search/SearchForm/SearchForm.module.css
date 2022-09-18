@@ -1,0 +1,42 @@
+.app {
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+.space {
+  background-color: black;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.hr {
+  background-color: dodgerblue;
+}
+.input {
+  width: 300px;
+  height: 30px;
+  margin: 20px 0px 0px 10px;
+  border-color: cyan;
+}
+.button {
+  float: right;
+  margin-right: 20px;
+}
+.button button {
+  width: 80px;
+  height: 40px;
+  margin: 0px 10px;
+  border: none;
+}
+.button button:hover {
+  color: white;
+  background-color: dodgerblue;
+}

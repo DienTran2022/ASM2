@@ -6,7 +6,7 @@ function useFetch(url) {
     try {
       const reponse = await fetch(url);
       if (!reponse.ok) {
-        throw new Error("Something went wrong!");
+        throw new Error("Vui lòng click chuyển phim chậm lại! Sever đang load");
       }
       const data = await reponse.json();
       const dataMovies = data.results;

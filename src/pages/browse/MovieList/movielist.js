@@ -22,10 +22,10 @@ const MovieList = ({ fetchUrl, title, isLarge }) => {
       setShow(() => setShow(!show));
       setInfoClick("");
     } else {
-      setInfoClick(movie.name);
+      setInfoClick(movie.name || movie.original_title);
     }
   };
-  console.log(infoClick);
+
   return (
     <div>
       <h1 className={moviesStyle["title"]}>{title}</h1>

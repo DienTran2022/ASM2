@@ -1,9 +1,8 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   position: fixed;
   z-index: 2;
   width: 100%;
-  margin-top: 10px;
 }
 .navbarchange {
   background-color: black;

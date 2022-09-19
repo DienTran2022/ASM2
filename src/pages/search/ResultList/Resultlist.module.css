@@ -9,8 +9,19 @@
 }
 .showresults {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
 }
 .border {
   width: 100%;
+  margin-top: 50px;
+}
+.info {
+  z-index: 2;
+  position: relative;
+}
+.nomovies {
+  color: white;
+  font-size: 30px;
+  margin: auto;
+  padding: 20px 0px;
 }

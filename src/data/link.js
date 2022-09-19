@@ -1,3 +1,5 @@
+// Tạo các info dữ liệu cần thiết
+
 export const imageBasePath = `https://api.themoviedb.org/3`;
 
 export const API_KEY = `66360006c856854e580e34d0ef9d0f1e`;

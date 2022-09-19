@@ -2,8 +2,6 @@ import React from "react";
 import movieDetailStyle from "./movieDetail.module.css";
 import InfoYoutube from "./infoyoutube";
 const MovieDetail = (props) => {
-  // console.log("Data in Movie:", props.data);
-
   return (
     <div className={movieDetailStyle["movieDetail"]}>
       <div className={movieDetailStyle["info"]}>

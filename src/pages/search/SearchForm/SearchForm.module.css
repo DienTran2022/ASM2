@@ -1,7 +1,11 @@
+.background {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
 .app {
   background-color: white;
   width: 500px;
-  height: 200px;
+  height: 170px;
   margin: auto;
 }
 .space {

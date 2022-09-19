@@ -1,7 +1,7 @@
 .background {
   background-color: black;
 }
-
-/* .forminput {
-  margin-top: 50px;
-} */
+.navbar {
+  width: 100%;
+  position: fixed;
+}

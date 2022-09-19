@@ -6,6 +6,7 @@ import useFetch from "../../../hooks/useFetch";
 import { url } from "../../../data/link";
 
 const Banner = () => {
+  // Lấy data API dựa trên data dựa trên url
   const { movies, fetchMovies } = useFetch(url.Banner);
   const dataRandom =
     movies.length !== 0 &&

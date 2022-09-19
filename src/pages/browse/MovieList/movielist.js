@@ -4,6 +4,7 @@ import MovieDetail from "../movieDetail/movieDetail";
 import moviesStyle from "./movielist.module.css";
 import useFetch from "../../../hooks/useFetch";
 
+/// Tạo Component MovieList nhận 3 tham số đầu vào
 const MovieList = ({ fetchUrl, title, isLarge }) => {
   const { movies, fetchMovies } = useFetch(fetchUrl);
   const [show, setShow] = useState(false);
@@ -15,9 +16,14 @@ const MovieList = ({ fetchUrl, title, isLarge }) => {
     }
     fecthData();
   }, [fetchMovies]);
-
+  ////////////////////////////////////////////////
+  /**
+   * Hàm xử lý lấy data hiển thị infoMovie và logic hiển thị
+   * @param {dữ liệu json} movie
+   */
   const handleInfoMovie = (movie) => {
     setInfo(movie);
+
     if (infoClick === movie.name || infoClick === movie.original_title) {
       setShow(() => setShow(!show));
       setInfoClick("");

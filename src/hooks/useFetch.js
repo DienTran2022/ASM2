@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 
 function useFetch(url) {
+  /// Tạo 1 custom Hook để lấy data từ url.
   const [movies, setMovies] = useState([]);
   const fetchMovies = useCallback(async () => {
     try {

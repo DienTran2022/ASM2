@@ -3,18 +3,19 @@ import ResultList from "../ResultList/Resultlist";
 import SearchFormStyle from "./SearchForm.module.css";
 
 const SearchForm = () => {
+  // Tạo 2 State dữ liệu và hiển thị cho Results
   const [enteredData, setEnteredData] = useState("");
   const [showResult, setShowResult] = useState(false);
-
+  // Tạo hàm lấy dữ liệu từ Input và truyền sang component ResultList
   const handleChangeInput = (event) => {
     setEnteredData(event.target.value);
   };
-
+  // Tạo hàm reset Input
   const resetInput = () => {
     setEnteredData("");
     setShowResult(false);
   };
-
+  // Tạo hàm click Search
   const AcceptInput = () => {
     setShowResult(true);
   };

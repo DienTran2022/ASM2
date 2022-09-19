@@ -3,9 +3,12 @@ import { useNavigate } from "react-router-dom";
 import navbarStyles from "./navbar.module.css";
 
 const NavBar = () => {
+  // Tạo trạng thái và liên kết các trang
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
 
+  /////////////////////////////////////////
+  // Hàm xử lý khi cuộn trang quá 100px và tạo class qua trạng thái của show
   const navBarChange = () => {
     if (window.scrollY > 100) {
       setShow(true);

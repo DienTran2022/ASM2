@@ -5,7 +5,6 @@ import InfoYoutubeStyle from "./infoyoutube.module.css";
 import YouTube from "react-youtube";
 
 const InfoYoutube = (props) => {
-  //   console.log("data input: ", props.data);
   const opts = {
     height: "400",
     width: "100%",
@@ -14,7 +13,7 @@ const InfoYoutube = (props) => {
     },
   };
 
-  //   console.log("data InfoYoutube: ", props.data);
+  // Lấy data API dựa trên data trang MovieList
   const { movies, fetchMovies } = useFetch(
     `https://api.themoviedb.org/3//movie/${props.data.id}/videos?api_key=${API_KEY}`
   );
@@ -28,7 +27,9 @@ const InfoYoutube = (props) => {
   let videoinfo = movies.find((item) => {
     return item.type === "Trailer";
   });
-  //   console.log("data for MovieYoutube:", videoinfo);
+
+  ////////////////////////////////////////////
+  // Tạo biến content để xử lý dữ liệu với từng tính huống data nhận từ get API phía trên
   let content = "";
   if (!props.data.hasOwnProperty("video") || typeof videoinfo === "undefined") {
     content = (
